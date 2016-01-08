@@ -8,9 +8,6 @@
 		</div>
 	@endif
 
-
-
-	@if(Session::has('data'))
 	    <div class="media">
 	      <h1>Privacy Policy</h1>
 
@@ -71,28 +68,7 @@
 <p>If you have any questions about this Privacy Policy, please contact us.</p>
 	    </div>
 	    <hr>
-	    <a href="{{url('logout')}}">Logout</a>
-	@else
-	<div class="media">
-	      <a class="pull-left" href="#">
-	        <img class="media-object" width="200px" src="avatar/new-profile-977077305685901.jpg" alt="Profile image">
-	      </a>
-	      <div class="media-body">
-	        <h1 class="media-heading">
-	        Tribute to Indian Martyrs - Phatankot :: {{{ Session::get('data')['name'] }}} </h1>
-	        <p>If you support India and Want to stop terrorism. 
-	        And want to show your tribute to indian Martyrs And a selute to soldiers, <br/>
-	        Update your profile picture with profile picture overlaid by indian flag(Tiranga).</p>
-	      </div>
-
-	      <div class="fb-like" data-href="http://tribute.purgesoft.com/"
-	       data-layout="button" data-action="like" 
-	       data-show-faces="true" data-share="true"></div>
-
-	    </div>
-	    <hr>
-		
-	@endif
+	    
 
 	<div id="fb-root"></div>
 <script>(function(d, s, id) {
