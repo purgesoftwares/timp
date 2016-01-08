@@ -33,7 +33,7 @@
 	@else
 	<div class="media">
 	      <a class="pull-left" href="#">
-	        <img class="media-object" src="{{ assest('avatar/new-profile-977077305685901.jpg') }}" alt="Profile image">
+	        <img class="media-object" src="avatar/new-profile-977077305685901.jpg" alt="Profile image">
 	      </a>
 	      <div class="media-body">
 	        <h1 class="media-heading">
