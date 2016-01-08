@@ -29,6 +29,11 @@ Route::get('login/fb', function() {
     return Redirect::to($facebook->getLoginUrl($params));
 });
 
+Route::get('privacy-policy', function() {
+    
+    return View::make('provacy', array('data'=>$data));
+});
+
 Route::get('login/fb/callback', function() {
     $code = Input::get('code');
     if (strlen($code) == 0) return Redirect::to('/')->with('message', 'There was an error communicating with Facebook');

@@ -40,6 +40,11 @@
           </button>
           <a class="navbar-brand" href="/">TIMP App : Tribute to Martyrs, Stop Terrorism.</a>
         </div>
+		<div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+			<li><a href="{{url('privacy-policy')}}">Privacy Policy</a></li>
+		  </ul>
+		 </div>
         <!-- <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="{{url('/')}}">Home</a></li>
