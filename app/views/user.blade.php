@@ -13,7 +13,7 @@
 	@if(Session::has('data'))
 	    <div class="media">
 	      <a class="pull-left" href="#">
-	        <img class="media-object" src="{{ Session::get('data')['imageUrl'] }}" alt="Profile image">
+	        <img class="media-object" width="200px" src="{{ Session::get('data')['imageUrl'] }}" alt="Profile image">
 	      </a>
 	      <div class="media-body">
 	        <h1 class="media-heading">
@@ -33,7 +33,7 @@
 	@else
 	<div class="media">
 	      <a class="pull-left" href="#">
-	        <img class="media-object" src="avatar/new-profile-977077305685901.jpg" alt="Profile image">
+	        <img class="media-object" width="200px" src="avatar/new-profile-977077305685901.jpg" alt="Profile image">
 	      </a>
 	      <div class="media-body">
 	        <h1 class="media-heading">
