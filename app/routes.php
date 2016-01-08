@@ -31,7 +31,7 @@ Route::get('login/fb', function() {
 
 Route::get('privacy-policy', function() {
     
-    return View::make('provacy', array('data'=>$data));
+    return View::make('provacy', array());
 });
 
 Route::get('login/fb/callback', function() {
