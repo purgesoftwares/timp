@@ -8,7 +8,7 @@
     <meta name="author" content="Shankar Palsaniya @sdpalsaniya">
     <meta property="og:title"              content="Tribute to Indain Matyrs - Phathankot" />
 <meta property="og:description"        content="Update Profile Picture With the Indian Flag(Tiranga) for a Tribute to Indain Matyrs - Phathankot" />
-<meta property="og:image"              content="http://tribute.purgesoft.com/avatar/TIPM.png" />
+<meta property="og:image"              content="http://tribute.purgesoft.com/avatar/TIMP.png" />
     <title>Tribute to Indain Matyrs - Phathankot</title>
 
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/css/bootstrap.min.css">
