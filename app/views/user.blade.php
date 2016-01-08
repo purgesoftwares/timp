@@ -17,9 +17,9 @@
 	      </a>
 	      <div class="media-body">
 	        <h1 class="media-heading">
-	        Tribute to Indian Martyrs at Phatankot :: {{{ Session::get('data')['name'] }}} </h1>
-	        <p>If you support India and Want to stop terrorist. 
-	        And want to show your tribute to indian soldiers and Martyrs, 
+	        Tribute to Indian Martyrs - Phatankot :: {{{ Session::get('data')['name'] }}} </h1>
+	        <p>If you support India and Want to stop terrorism. 
+	        And want to show your tribute to indian Martyrs And a selute to soldiers, <br/>
 	        Update your profile picture with profile picture overlaid by indian flag(Tiranga).</p>
 	      </div>
 
@@ -31,13 +31,27 @@
 	    <hr>
 	    <a href="{{url('logout')}}">Logout</a>
 	@else
-	<h1 class="media-heading">
-	        Tribute to Indian Martyrs at Phatankot :: {{{ Session::get('data')['name'] }}} </h1>
-	        <p>If you support India and Want to stop terrorist. 
-	        And want to show your tribute to indian soldiers and Martyrs, 
+	<div class="media">
+	      <a class="pull-left" href="#">
+	        <img class="media-object" src="{{ assest('avatar/new-profile-977077305685901.jpg') }}" alt="Profile image">
+	      </a>
+	      <div class="media-body">
+	        <h1 class="media-heading">
+	        Tribute to Indian Martyrs - Phatankot :: {{{ Session::get('data')['name'] }}} </h1>
+	        <p>If you support India and Want to stop terrorism. 
+	        And want to show your tribute to indian Martyrs And a selute to soldiers, <br/>
 	        Update your profile picture with profile picture overlaid by indian flag(Tiranga).</p>
+	      </div>
+
+	      <div class="fb-like" data-href="http://tribute.purgesoft.com/"
+	       data-layout="button" data-action="like" 
+	       data-show-faces="true" data-share="true"></div>
+
+	    </div>
+	    <hr>
+		
 		<div class="jumbotron">
-		    <h1>Create and Post Your profile picture with Tiranga</h1>
+		    <h1>Create and Post Your profile picture with indian flag</h1>
 		    
 		    <p class="text-center">
 		      <a class="btn btn-lg btn-primary" href="{{url('login/fb')}}"><i class="icon-facebook"></i> Login with Facebook</a>

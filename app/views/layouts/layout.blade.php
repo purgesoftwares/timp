@@ -38,7 +38,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">TIMP App</a>
+          <a class="navbar-brand" href="/">TIMP App : Tribute to Martyrs, Stop Terrorism.</a>
         </div>
         <!-- <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
