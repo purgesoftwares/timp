@@ -54,7 +54,7 @@
 		    <h1>Create and Post Your profile picture with indian flag</h1>
 		    
 		    <p class="text-center">
-		      <a class="btn btn-lg btn-primary" href="{{url('login/fb')}}"><i class="icon-facebook"></i> Login with Facebook</a>
+		      <a class="btn btn-lg btn-primary" href="{{url('login/fb')}}"><i class="icon-facebook"></i> Create and Post</a>
 		    </p>
 		</div>
 	@endif
