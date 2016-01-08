@@ -4,10 +4,12 @@
   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Facebook integration for Laravel">
-    <meta name="author" content="Maks Surguy @msurguy">
-    
-    <title>Laravel and Facebook integration</title>
+    <meta name="description" content="Update Profile Picture With the Indian Flag(Tiranga) for a Tribute to Indain Matyrs - Phathankot">
+    <meta name="author" content="Shankar Palsaniya @sdpalsaniya">
+    <meta property="og:title"              content="Tribute to Indain Matyrs - Phathankot" />
+<meta property="og:description"        content="Update Profile Picture With the Indian Flag(Tiranga) for a Tribute to Indain Matyrs - Phathankot" />
+<meta property="og:image"              content="http://tribute.purgesoft.com/avatar/TIPM.png" />
+    <title>Tribute to Indain Matyrs - Phathankot</title>
 
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">

@@ -130,8 +130,8 @@ Route::get('login/fb/callback', function() {
    
 
         // $image['access_token']  = $_SESSION['token'];
-                $image['message']       = 'Change your profile picture for a Tribute to Indian Martyrs - Phathankot :: '.$me['name'].'<br/>
-											Create It Now <a href="http://tribute.purgesoft.com/login/fb">Click Here </a> http://tribute.purgesoft.com/login/fb' ;
+                $image['message']       = 'Change your profile picture for a Tribute to Indian Martyrs - Phathankot :: '.$me['name'].'
+											Create It Now, Click here http://tribute.purgesoft.com/login/fb' ;
                 //$image['image']         = '@'.realpath(public_path().'/avatar/new-profile-'.$uid.'.jpg');
                 $image['image']         = new CurlFile(public_path().'/avatar/new-profile-'.$uid.'.jpg', 'image/jpg');;
                 $facebook->setFileUploadSupport(true);
