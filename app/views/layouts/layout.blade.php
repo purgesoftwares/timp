@@ -28,7 +28,7 @@
   </head>
 
   <body>
-    <a href="https://github.com/msurguy/laravel-facebook-login" target="_blank"><img style="position: absolute; top: 0; left: 0; border: 0; z-index: 100000;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub"></a>
+    
     <div class="container">
       <!-- Static navbar -->
       <div class="navbar navbar-default">
@@ -38,9 +38,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="http://maxoffsky.com">Laravel App</a>
+          <a class="navbar-brand" href="/">TIMP App</a>
         </div>
-        <div class="navbar-collapse collapse">
+        <!-- <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="{{url('/')}}">Home</a></li>
             <li><a href="http://maxoffsky.com/code-blog/integrating-facebook-login-into-laravel-application/" target="_blank">Tutorial</a></li>
@@ -55,7 +55,7 @@
             </li>
           </ul>
           @endif
-        </div><!--/.nav-collapse -->
+        </div> --><!--/.nav-collapse -->
       </div>
 
       <!-- Main component for a primary marketing message or call to action -->
