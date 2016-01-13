@@ -54,10 +54,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-            'host'      => getenv('db_host'),
-            'database'  => 'facebook-login',
-            'username'  => getenv('db_username'),
-            'password'  => getenv('db_password'),
+            'host'      => 'localhost',
+            'database'  => 'timp',
+            'username'  => 'timp',
+            'password'  => 'FOcTvKDBU56FyUcXwjnY12sd',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
