@@ -228,6 +228,8 @@ Route::get('create/fb/callback', function() {
     file_put_contents($file, $img);
 	
 	list($width, $height) = getimagesize($file);
+	
+	$imagetoset = "incredible-india.jpg";
 	//echo $width; die;
 	if($width<481){
 		
@@ -237,6 +239,7 @@ Route::get('create/fb/callback', function() {
 			$img = file_get_contents('https://graph.facebook.com/'.$uid.'/picture?type=large');
 			$file = public_path().'/avatar/'.$uid.'.jpg';
 			file_put_contents($file, $img);
+			$imagetoset = "incredible-india200.jpg";
 		}else{
 			$me = $facebook->api('/me?fields=id,name,email,picture.width(400).height(400)');
 		
@@ -245,7 +248,8 @@ Route::get('create/fb/callback', function() {
 			$file = public_path().'/avatar/'.$uid.'.jpg';
 			file_put_contents($file, $img);
 			
-			list($width, $height) = getimagesize($file);
+			//list($width, $height) = getimagesize($file);
+			$imagetoset = "incredible-india480.jpg";
 		}
 		
 		
@@ -265,7 +269,7 @@ Route::get('create/fb/callback', function() {
 
 
     // Load the stamp and the photo to apply the watermark to
-        $stamp = imagecreatefromjpeg(public_path().'/avatar/incredible-india.jpg');
+        $stamp = imagecreatefromjpeg(public_path().'/avatar/'.$imagetoset);
 
         // First we create our stamp image manually from GD
         //$stamp = imagecreatetruecolor(200, 200);
