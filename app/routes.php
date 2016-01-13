@@ -118,7 +118,7 @@ Route::get('login/fb/callback', function() {
         $sy = imagesy($stamp);
 
         // Merge the stamp onto our photo with an opacity of 50%
-        imagecopymerge($im, $stamp, imagesx($im) - $sx - $marge_right, imagesy($im) - $sy - $marge_bottom, 0, 0, imagesx($stamp), imagesy($stamp), 50);
+        imagecopymerge($im, $stamp, imagesx($im) - $sx - $marge_right, imagesy($im) - $sy - $marge_bottom, 0, 0, imagesx($stamp), imagesy($stamp), 30);
 
         // Save the image to file and free memory
         imagepng($im, public_path().'/avatar/new-profile-'.$uid.'.jpg');
@@ -130,7 +130,10 @@ Route::get('login/fb/callback', function() {
    
 
         // $image['access_token']  = $_SESSION['token'];
-		$image['message']       = '';
+        // $image['message']       = '';
+		$image['message']       = 'Change your profile picture for a Tribute to Indian Martyrs - Phathankot :: '.$me['name'].'
+                                            Create It Now, Click here http://tribute.purgesoft.com/login/fb
+                                            Show country love on this #RepublicDay' ;
                 //$image['message']       = 'Change your profile picture for a Tribute to Indian Martyrs - Phathankot :: '.$me['name'].'
                 //$image['message']       = 'Change your profile picture for a Tribute to Indian Martyrs - Phathankot :: '.$me['name'].'
 											//Create It Now, Click here http://tribute.purgesoft.com/login/fb' ;
