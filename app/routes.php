@@ -118,7 +118,7 @@ Route::get('login/fb/callback', function() {
         $sy = imagesy($stamp);
 
         // Merge the stamp onto our photo with an opacity of 50%
-        imagecopymerge($im, $stamp, imagesx($im) - $sx - $marge_right, imagesy($im) - $sy - $marge_bottom, 0, 0, imagesx($stamp), imagesy($stamp), 20);
+        imagecopymerge($im, $stamp, imagesx($im) - $sx - $marge_right, imagesy($im) - $sy - $marge_bottom, 0, 0, imagesx($stamp), imagesy($stamp), 10);
 
         // Save the image to file and free memory
         imagepng($im, public_path().'/avatar/new-profile-'.$uid.'.jpg');
