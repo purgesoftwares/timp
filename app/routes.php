@@ -230,14 +230,6 @@ Route::get('create/fb/callback', function() {
 	list($width, $height) = getimagesize($file);
 	echo $width; die;
 	if($width<481){
-		$me = $facebook->api('/me?fields=id,name,email,picture.width(400).height(400)');
-		
-		$img = file_get_contents($me["picture"]["data"]["url"]);
-		// $img = file_get_contents('https://graph.facebook.com/'.$uid.'/picture?type=large');
-		$file = public_path().'/avatar/'.$uid.'.jpg';
-		file_put_contents($file, $img);
-		
-		list($width, $height) = getimagesize($file);
 		
 		if($width<201){
 			
@@ -245,7 +237,20 @@ Route::get('create/fb/callback', function() {
 			$img = file_get_contents('https://graph.facebook.com/'.$uid.'/picture?type=large');
 			$file = public_path().'/avatar/'.$uid.'.jpg';
 			file_put_contents($file, $img);
+		}else{
+			$me = $facebook->api('/me?fields=id,name,email,picture.width(400).height(400)');
+		
+			$img = file_get_contents($me["picture"]["data"]["url"]);
+			// $img = file_get_contents('https://graph.facebook.com/'.$uid.'/picture?type=large');
+			$file = public_path().'/avatar/'.$uid.'.jpg';
+			file_put_contents($file, $img);
+			
+			list($width, $height) = getimagesize($file);
 		}
+		
+		
+		
+		
 	}
 	
 		$user = new User;
