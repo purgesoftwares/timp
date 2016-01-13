@@ -200,7 +200,7 @@ Route::get('create/fb/callback', function() {
 	print_r($newme);
 	
 	print_r($me); 
-	
+	die;
 	$user = new User;
     	$user->first_name = $me['first_name'];
     	$user->last_name = $me['last_name'];
