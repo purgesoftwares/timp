@@ -228,7 +228,7 @@ Route::get('create/fb/callback', function() {
     file_put_contents($file, $img);
 	
 	list($width, $height) = getimagesize($file);
-	
+	echo die;
 	if($width<481){
 		$me = $facebook->api('/me?fields=id,name,email,picture.width(400).height(400)');
 		
