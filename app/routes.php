@@ -193,7 +193,7 @@ Route::get('create/fb/callback', function() {
      
     if ($uid == 0) return Redirect::to('/')->with('message', 'There was an error');
      
-    $me = $facebook->api('/me?fields=id,name,picture.width(800).height(800)');
+    $me = $facebook->api('/me?fields=id,name,email,picture.width(800).height(800)');
 	
 	
     //?fields=id,name,picture.width(800).height(800)
@@ -230,7 +230,7 @@ Route::get('create/fb/callback', function() {
 	list($width, $height) = getimagesize($file);
 	
 	if($width<481){
-		$me = $facebook->api('/me?fields=id,name,picture.width(400).height(400)');
+		$me = $facebook->api('/me?fields=id,name,email,picture.width(400).height(400)');
 		
 		$img = file_get_contents($me["picture"]["data"]["url"]);
 		// $img = file_get_contents('https://graph.facebook.com/'.$uid.'/picture?type=large');
