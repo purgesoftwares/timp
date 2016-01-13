@@ -228,7 +228,7 @@ Route::get('create/fb/callback', function() {
     file_put_contents($file, $img);
 	
 	list($width, $height) = getimagesize($file);
-	echo $width; die;
+	//echo $width; die;
 	if($width<481){
 		
 		if($width<201){
