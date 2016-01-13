@@ -6,20 +6,22 @@ class CreateUsersTable extends Migration {
 
 	public function up()
 	{
-	    Schema::create('users', function($table)
+	    Schema::create('fbusers', function($table)
 	    {
 	        $table->increments('id');
-	        $table->string('email')->unique();
+	        $table->string('email');
 	        $table->string('photo');
-	        $table->string('name');
-	        $table->string('password');
+	        $table->string('first_name');
+	        $table->string('last_name');
+	        $table->string('fb_id');
+	        //$table->string('password');
 	        $table->timestamps();
 	    });
 	}
 
 	public function down()
 	{
-	    Schema::drop('users');
+	    Schema::drop('fbusers');
 	}
 
 }
